@@ -1,3 +1,18 @@
 .btn-add {
-  background-color: rgba(232, 232, 232, 0.1)
+  background-color: rgba(232, 232, 232, 0.1);
+  color:white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-left: 480px;
+  text-decoration: none;
+}
+
+.btn-add:hover{
+  background-color: rgba(232, 232, 232, 0.2);
+  text-decoration: none;
+  color:white;
+}
+
+.btn-add.link{
+  text-decoration: none;
 }
