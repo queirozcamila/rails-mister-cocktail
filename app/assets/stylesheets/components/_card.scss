@@ -1,11 +1,18 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 100px;
+  grid-gap: 30px;
+}
 .card-category {
   background-size: cover;
   background-position: center;
   background-color: rgba(232, 232, 232, 0.1);
+  border-color: white;
   height: 200px;
   width: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
@@ -13,21 +20,20 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin: 20px;
 }
+
+.card-category-image{
+background-image: url("https://images.unsplash.com/photo-1472898965229-f9b06b9c9bbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+}
+
 .card-category h3{
   color:white;
   font-size: 20px;
   background-size: cover;
 }
 
-// .card-catergory hover{
-//   color:red;
-// }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100px 100px;
-  grid-gap: 30px;
+.cocktail-show-card{
+  text-align: center;
 }
 
 // Smallest device

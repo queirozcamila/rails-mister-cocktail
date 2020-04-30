@@ -13,7 +13,7 @@ before_action :find_cocktail, only: [:new, :create]
   end
 
   def destroy
-    @dose = Dose.new(dose_params)
+    @dose = Dose.find(params[:id])
     @dose.destroy
     redirect_to cocktails_path
   end
