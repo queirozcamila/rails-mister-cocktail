@@ -1,3 +1,8 @@
+.main-card{
+  height:1500px;
+}
+
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -18,7 +23,8 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 4px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  margin: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .card-category-image{
@@ -29,6 +35,10 @@ background-image: url("https://images.unsplash.com/photo-1472898965229-f9b06b9c9
   color:white;
   font-size: 20px;
   background-size: cover;
+}
+
+.card-text{
+  color:white;
 }
 
 

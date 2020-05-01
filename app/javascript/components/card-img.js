@@ -1,9 +1,13 @@
 const changeBgMouseOver = () => {
-  const card = document.querySelector('card-category');
-    card.addEventListener('mouseover', () => {
+  const cards = document.querySelectorAll('.card-category');
+  cards.forEach((card) => {
+    card.addEventListener('mouseover', (e) => {
       card.classList.add('card-category-image');
-      card.classList.remove('card-category');
     });
+    card.addEventListener('mouseout', (e) => {
+      card.classList.remove('card-category-image');
+    });
+  })
 }
 
 export { changeBgMouseOver };
